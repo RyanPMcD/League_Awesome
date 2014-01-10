@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
+# Set the version of Ruby
+ruby '2.0.0'
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
@@ -37,7 +40,7 @@ gem 'jbuilder', '~> 1.2'
 
 # Use Devise for user auth
   gem 'devise'
-  
+
 group :development, :test do
   gem 'byebug'			# debugger
   gem 'rspec-rails'
