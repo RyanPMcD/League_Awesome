@@ -35,10 +35,12 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Use Devise for user auth
+  gem 'devise'
+  
 group :development, :test do
   gem 'byebug'			# debugger
   gem 'rspec-rails'
-  gem 'devise'
   gem 'timecop' 		# Functionality for testing things with time stamps
   gem 'simplecov' 		# Adds Coverage folder to your main directory and opens html file with list of what has been tested and what still needs to be tested
 end
