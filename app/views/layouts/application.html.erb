@@ -14,6 +14,8 @@
   <% if flash[:alert] %>
   	<p class="alert"><%= alert %></p>
   <% end %>
+  <span> <%= link_to "Sign In", new_owner_session_path %></span>
+  <span> <%= link_to "Sign Out", destroy_owner_session_path, method: :delete %></span>
   
   <%= yield %>
 
