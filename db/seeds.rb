@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'csv'
+
+CSV.foreach('./db/ProPlayers_NFLStandard_2013', :headers => true) do |row|
+	Player.create!(row.to_hash)
+end
+

@@ -29,8 +29,11 @@ gem "twitter-bootstrap-rails"
 
 # Runtime for JavaScript in Ruby
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 # gem 'therubyrhino' 	# This is the preferred runtime for JRuby
+
+# Install less gem for twitter bootstrap
+gem "less-rails"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
