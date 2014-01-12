@@ -8,7 +8,10 @@
 
 require 'csv'
 
-CSV.foreach('./db/ProPlayers_NFLStandard_2013', :headers => true) do |row|
-	Player.create!(row.to_hash)
+file = "./db/ProPlayers_NFLStandard_2013.csv"
+
+CSV.foreach(file) do |row|
+	Player.create!(name: row[0], position: row[1], nfl_team: row[2])
 end
+
 
