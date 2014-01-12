@@ -14,4 +14,3 @@ CSV.foreach(file) do |row|
 	Player.create!(name: row[0], position: row[1], nfl_team: row[2])
 end
 
-

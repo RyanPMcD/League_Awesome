@@ -10,6 +10,7 @@ LeagueAwesome::Application.routes.draw do
    root 'welcome#index'
 
    resources :teams
+   resources :players
 
 
 
