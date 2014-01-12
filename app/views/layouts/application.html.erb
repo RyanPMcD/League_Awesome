@@ -16,6 +16,7 @@
   <% end %>
   <span> <%= link_to "Sign In", new_owner_session_path %></span>
   <span> <%= link_to "Sign Out", destroy_owner_session_path, method: :delete %></span>
+  <span> <%= link_to "Update Owner Info", edit_owner_registration_path %></span>
   
   <%= yield %>
 
